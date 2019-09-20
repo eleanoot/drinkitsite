@@ -1,0 +1,576 @@
+
+/* STYLING THAT APPLIES TO ALL SIZES OF SCREEN */
+html,body { 
+	margin: 0px; 
+	height: 100%;		
+}
+
+/* Container for all of the main content of the page, to force the footer to the bottom of the page. */
+#wrap{ 
+	min-height: 100%; 
+}
+
+/* Main page content (not including header and footer) */
+#main{ 
+	overflow: auto;
+	padding-bottom: 15px;	
+}
+
+h1{
+	color: #FFFFFF;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+
+h2{
+	color:Black;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+p,h3{
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+	
+	
+a:link {
+	color: #1EBAE8;
+}	
+
+a:visited {
+	color: #199ABF;
+}
+	
+/* Colour the introduction tesxt. */	
+.intro h3 { 
+	color: #FFFFFF; 
+}
+
+/* Style the header bar that appears at the top of the page. */
+.header{
+	position: fixed; /* Fix the header bar to the top of the screen to follow the page down. */
+	width: 100%; /* Have the header bar stretch all the way across the screen. */
+	clear: both;
+	top: 0px; /* Position the header bar at the very top of the screen. */
+	background-color: #1EBAE8;
+	font-size: 20px;
+	z-index:2; /* Prevent icons scrolling over the top of the header as opposed to under it. */
+}
+
+/* Style the logo that appears in the header. */
+.header img {
+	position: static;
+	display: inline-block;
+	margin: 0px;	
+}
+
+/* Style the text in the header. */
+.header p, .header a {
+	margin: 0px;
+}
+	
+	
+/* Put the list items used in the header for links side by side. */
+.header li{
+	display:inline;  
+}
+
+/* Style the text of the list items used in the header. */
+.header li a {
+	text-decoration: none;
+	color: #FFFFFF;
+}	
+
+.header ul{
+	margin: 0px 10px 0px 0px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;	
+}
+
+/* Style the section of the page used to introduce the app. */ 	
+.intro{
+	padding: 70px 30px 30px 20px;
+}
+
+/* Style the header text used in the introduction section. */
+.intro h1 {
+	font-size: 50px;
+	margin: 0px 0px 10px 0px;
+}
+
+.intro h3 { 
+	font-size: 25px;
+	margin: 0px 20px 0px 0px;
+}
+
+/* Style the container that the introduction is held in. */
+.intro-block{
+	overflow: hidden; /* Prevent scrollbars appearing when the browser is shrunk. */
+	background: #1EBAE8; /* For browsers that do not support gradients */
+    background: -moz-linear-gradient(#1EBAE8, #199ABF); /* For Firefox  */
+    background: linear-gradient(#1EBAE8, #199ABF); /* Standard syntax */
+}
+
+/* Curve the bottom of the introduction block. */
+#bottom-curve {
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	width: 100%;
+	background: #199ABF;
+	height: 50px;
+}
+
+/* Style the general container used for content past the introduction. */
+.block{ 
+	clear: both;
+	overflow: hidden;
+	color: grey;
+}
+
+/* Style the content in the features section of the page. */
+.all-features h2{
+	font-size: 40px;
+}
+
+.all-features h3{
+	font-size: 25px;
+}
+
+.all-features p{
+	font-size:25px;
+	color: Grey;
+}
+
+/* Prevent scrollbars appearin unneeded when the browser shrinks. */
+.feature{
+	overflow: auto;
+}
+
+.feature h2 , .desc h2, .desc h3{ 
+	color: #1EBAE8; 
+}
+
+/* Style the content in the reviews section of the page. */
+.review{
+	overflow: auto;
+	text-align: center;
+}
+
+.review > h3 {
+	padding: 0px;
+	color: #FFFFFF;
+}
+
+.all-reviews{
+	clear: both;
+	color: #FFFFFF;
+}
+
+/* Curve the top of the reviews section. */
+#top-curve {
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	width: 100%;
+	background: #1EBAE8;
+	height: 50px;
+}
+
+/* Style the containers used for anchor links to help them jump to the correct point on the page. */
+.anchor{
+	display: block;
+	position: relative;	
+}
+	
+/* Style the text used on the FAQ and downloads pages. */
+.FAQ-list .desc, .downloads .desc {
+	font-size: 20px;
+	color: grey;		
+}
+
+/* Style the list of FAQ questions. */
+#FAQ-list {
+	text-align: left;		
+}
+
+#FAQ-list a {
+	text-decoration: none;
+	color: #1EBAE8;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;	
+}
+
+#FAQ-list li{ 
+	list-style: none;
+	padding: 10px 10px 5px 0px;
+}
+
+.faq-links, .downloads{ 
+	font-size: 20px; 
+	color: grey;
+	padding: 20px;
+}
+
+.desc { 
+	color: grey; 
+}
+
+/* Style the footer bar. */
+.footer{
+	display: inline-block;
+	padding: 0px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	background-color: #199ABF;
+	width: 100%;
+	position: relative;
+	margin-top: -50px; /* Ensure the footer bar sits at the very bottom of the page, and not midway down it.*/
+	height: 50px;
+	clear:both;
+}
+
+/* Allow the list items used for links to sit side by side. */
+.footer li { 
+	display: inline; 
+}
+
+/* Center the footer links on all layouts. */
+.footer ul { 
+	text-align: center;
+	position: relative;
+	margin-left: -30px;
+}
+
+.footer li a {
+	text-decoration: none;
+	color: #FFFFFF;
+}	
+
+/* ONLY APPLIES WHEN THE SCREEN IS 830px OR WIDER */
+@media only screen and (min-width: 830px){
+	
+	#main { 
+		margin-top: 94px; 
+	}
+
+	/* Set the size of the logo in the header to neatly fit into the browser window size. */
+	.header img {
+		width:181px;
+		height: 89px;
+	}
+
+	/* Position the menu links to the right in the header. */
+	.header ul{
+		float: right;
+		display: inline-block;
+		padding: 50px 0px 20px 0px;
+	}
+		
+	/* Position the content containers to alternate down the wider page. */
+	.float-right {
+		float:right;
+		clear: both;
+		overflow: auto;
+	}
+
+	.float-left {
+		float:left;
+		overflow: auto;
+	}
+
+	/* Style the contents of the floated sections. */
+	.image-left, .image-right {
+		clear:both;
+		overflow: auto;
+		margin: 20px;
+	}
+
+	.image-left h4, .image-right h4 {
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-size: 20px;
+	}
+
+	.image-left h2, .image-right h2 {
+		font-size: 40px;
+	}
+
+	.desc {
+		font-size:25px;
+		margin: 20px 0px 20px 0px;
+	}
+
+	.image-left .desc {
+		padding-left: 250px;
+		padding-right: 100px;
+	}
+	
+	.image-right .desc {
+		padding-right: 250px;
+		padding-left: 50px;
+	}
+
+	.block img{
+		margin: 0px 10px 0px 10px;
+	}
+
+	.intro-block{
+		padding: 20px 0px 70px 0px;	
+	}
+
+	.block{ 
+		margin: 40px;
+	}
+
+	.feature{
+		padding-top: 40px;
+	}
+
+	/* Allow the reviews to sit side by side next to each other. */ 
+	.review{
+		float:right;
+		width:33.33%;
+		padding: 10px 0px 10px 0px;
+		background: #1EBAE8; /* For browsers that do not support gradients */
+		background: -moz-linear-gradient(#1EBAE8, #199ABF); /* For Firefox */
+		background: linear-gradient(#1EBAE8, #199ABF); /* Standard syntax */
+	}
+
+	.review h3,p{
+		margin: 10px;	
+	}
+
+	.all-reviews{
+		background: #1EBAE8; /* For browsers that do not support gradients */
+		background: -moz-linear-gradient(#1EBAE8, #199ABF); /* For Firefox */
+		background: linear-gradient(#1EBAE8, #199ABF); /* Standard syntax */
+		
+	}
+	
+	.review-text {
+		height: 110px;
+	}
+	
+	/* Position the anchor lower than the sticky header so the header does not cover it up when the page jumps there. */ 
+	.anchor{
+		top: -100px;
+	}
+
+}
+
+
+/* ONLY APPLIES WHEN THE SCREEN IS BETWEEN 540PX AND 829PX */
+@media only screen and (min-width: 540px) and (max-width: 829px){
+
+	#main { 
+		margin-top: 94px;
+	}
+
+	/* Set the size of the logo in the header to neatly fit into the browser window size. */
+	.header img {
+		width: 181px;
+		height: 89px;
+	}
+	
+	/* Position the header links to the right of the header. */
+	.header ul{
+		float: right;
+		display: inline-block;
+		padding: 50px 0px 20px 0px;
+	}
+	
+	/* Center the text of the introuction. */
+	.intro{
+		text-align: center;
+	}
+
+	.intro-block{
+		overflow: auto;
+		background: #1EBAE8; /* For browsers that do not support gradients */
+		background: -moz-linear-gradient(#1EBAE8, #199ABF); /* For Firefox */
+		background: linear-gradient(#1EBAE8, #199ABF); /* Standard syntax */
+	}
+
+	.intro-block img { 
+		display: block;
+		margin: auto;
+	}
+
+	.block{ 
+		margin: 20px;
+	}
+
+	.all-features{ 
+		text-align: center;
+	}
+
+	.review h3,p{
+		margin: 0px;	
+	}
+	
+	/* Set the review text to take up a certain height on the page and allow the names and stars to always be next to each other. */
+	.review-text {
+		height: 30%;
+	}
+
+	/* Stagger the background colours of the reviews to produce the gradient. */
+	#review1 {
+		background: #1EBAE8; /* For browsers that do not support gradients */
+		background: -moz-linear-gradient(#1EBAE8, #1CAFDA); /* For Firefox */
+		background: linear-gradient(#1EBAE8, #1CAFDA); /* Standard syntax */
+	}
+
+	#review2 {
+		background: #1CAFDA; /* For browsers that do not support gradients */
+		background: -moz-linear-gradient(#1CAFDA, #1AA4CC); /* For Firefox */
+		background: linear-gradient(#1CAFDA, #1AA4CC); /* Standard syntax */
+	}
+
+	#review3 {
+		background: #1AA4CC; /* For browsers that do not support gradients */
+		background: -moz-linear-gradient(#1AA4CC, #199ABF); /* For Firefox */
+		background: linear-gradient(#1AA4CC, #199ABF); /* Standard syntax */
+	}
+	
+	.desc {
+		font-size:25px;
+		margin: 20px 0px 20px 0px;
+		text-align: center;
+	}
+	
+	.desc h2{
+		margin: 0px;
+	}
+	
+	/* Prevent the icons scrolling over the top of the header as opposed to underneath it. */
+	.image-left, .image-right { 
+		z-index:3; 
+	}
+	
+	.image-left img, .image-right img {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		margin-left: -100px;
+  	}
+	
+
+	.faq-links{  
+		padding-right: 10px;
+	}
+
+	/* Pad out the top of an anchor link so the text it jumps to is not hidden by the sticky header following and covering the top of the page. */
+	.anchor{
+		top: -100px;
+	}
+	
+}
+
+/* ONLY APPLIES WHEN THE SCREEN IS 539PX OR SMALLER */
+@media only screen and (max-width: 539px){
+	
+	#main { 
+		margin-top: 149px; 
+	}
+	
+	/* Reduce the size of the group image so it doesn't go off the small browser window. */
+	.intro-block img { 
+		width: 300px;
+		height: 300px;
+	}
+	
+	/* Set the size of the header bar logo and center it. */
+	.header img {
+		width: 225px; 
+		height: 111px;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		margin-left: -115px;
+	}
+
+	/* Center the list of links at the bottom of the header bar. */
+	.header ul{
+		padding: 0px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	
+	.intro{
+		text-align: center;
+	}
+	
+	.intro-block{
+		padding: 20px 0px 0px 0px;	
+	}
+
+	.intro-block img { 
+		display: block; 
+		margin: auto;
+	}
+
+	.block{ 
+		margin: 20px;	
+	}
+
+	.all-features{ 
+		text-align: center; 
+	}
+
+	.review h3,p{
+		margin: 0px 10px 0px 10px;
+	}
+
+	.review-text {
+		height: 30%;
+	}
+
+	/* Stagger the background colours of the reviews to produce the gradient. */
+	#review1 {
+		background: #1EBAE8; /* For browsers that do not support gradients */
+		background: -moz-linear-gradient(#1EBAE8, #1CAFDA); /* For Firefox */
+		background: linear-gradient(#1EBAE8, #1CAFDA); /* Standard syntax */
+	}
+
+	#review2 {
+		background: #1CAFDA; /* For browsers that do not support gradients */
+		background: -moz-linear-gradient(#1CAFDA, #1AA4CC); /* For Firefox */
+		background: linear-gradient(#1CAFDA, #1AA4CC); /* Standard syntax */
+	}
+
+	#review3 {
+		background: #1AA4CC; /* For browsers that do not support gradients */
+		background: -moz-linear-gradient(#1AA4CC, #199ABF); /* For Firefox */
+		background: linear-gradient(#1AA4CC, #199ABF); /* Standard syntax */
+	}
+	
+	.desc {
+		font-size:25px;
+		margin: 20px 0px 20px 0px;
+		text-align: center;
+	}
+	
+	.desc h2{
+		margin: 0px;
+	}
+	
+	.image-left, .image-right { 
+		z-index:3; 
+	}
+	
+	.image-left img, .image-right img {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		margin-left: -100px;
+  	}
+	
+	.faq-links{ 
+		padding-right: 10px;
+	}
+	
+	/* Pad out the top of an anchor link so the text it jumps to is not hidden by the sticky header following and covering the top of the page. */
+	.anchor{
+		top: -200px;
+	}
+
+	
+}
+
+
+
+	
